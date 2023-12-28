@@ -1,0 +1,3 @@
+const debug = {
+    debugging: false
+};
