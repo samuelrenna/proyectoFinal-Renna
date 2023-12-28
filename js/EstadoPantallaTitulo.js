@@ -42,7 +42,7 @@ class EstadoPantallaTitulo {
         document.getElementsByTagName("body")[0].style.overflow = "hidden";
         document.getElementsByTagName("body")[0].style.backgroundColor = "black";
 
-        // audio.reproducir(audio.pista1);
+        audio.reproducir(audio.pista1);
 
         // click en la pantalla para agregar nombre de usuario en localstorage 
         pantallaTituloElement.onclick = function (event) {
@@ -119,21 +119,22 @@ class EstadoPantallaTitulo {
 
     actualizar(registroTemporal) {
         // por los momentos no usare la animacion
+/*
+        if (this.framesAnimacion < 30) {
+            this.movimientoY++;
+        } else if (this.framesAnimacion >= 30 && this.framesAnimacion < 90) {
+            this.movimientoY--;
+        } else if (this.framesAnimacion >= 90 && this.framesAnimacion < 120) {
+            this.movimientoY++;
+        }
 
-        // if (this.framesAnimacion < 30) {
-        //     this.movimientoY++;
-        // } else if (this.framesAnimacion >= 30 && this.framesAnimacion < 90) {
-        //     this.movimientoY--;
-        // } else if (this.framesAnimacion >= 90 && this.framesAnimacion < 120) {
-        //     this.movimientoY++;
-        // }
+        this.framesAnimacion++;
 
-        // this.framesAnimacion++;
-
-        // if (this.framesAnimacion >= 120) {
-        //     this.framesAnimacion = 0;
-        //     this.movimientoY = 0;
-        // }
+        if (this.framesAnimacion >= 120) {
+            this.framesAnimacion = 0;
+            this.movimientoY = 0;
+        }
+*/
     }
 
     dibujar() {
